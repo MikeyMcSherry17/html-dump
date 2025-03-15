@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About ArchiTech</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+
+<!-- Include Header -->
+<div id="header"></div>
+<script>
+    fetch('../components/header.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('header').innerHTML = data);
+</script>
+
+<div class="content">
+    <h1>About ArchiTech</h1>
+    <p>ArchiTech is dedicated to transforming modern living through smart home automation. 
+       We specialize in providing seamless, integrated solutions that enhance comfort, 
+       security, and efficiency. With a minimalist design ethos, we aim to make cutting-edge 
+       technology accessible and stress-free.</p>
+</div>
+
+<!-- Include Footer -->
+<div id="footer"></div>
+<script>
+    fetch('../components/footer.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('footer').innerHTML = data);
+</script>
+
+</body>
+</html>
